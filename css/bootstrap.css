@@ -93,7 +93,7 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 0;
+  height: 1;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
@@ -1082,11 +1082,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Verdana;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-image: url(http://www.galaxiastudio.com/wp-content/uploads/2014/03/2252.jpg);
+  background-color: #fff;
 }
 input,
 button,
@@ -1097,12 +1097,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #AD1212;
+  color: #337ab7;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #AD1212;
+  color: #23527c;
   text-decoration: underline;
 }
 a:focus {
@@ -1148,6 +1148,28 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eee;
+  display: block;
+  margin-before: 0.5em;
+  margin-after: 0.5em;
+  margin-start: auto;
+  margin-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+.zig-zag {
+    border: none;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 40px;
+    background: linear-gradient(135deg, #ECEDDC 25%, transparent 25%) -20px 0,
+    linear-gradient(225deg, #ECEDDC 25%, transparent 25%) -20px 0,
+    linear-gradient(315deg, #ECEDDC 25%, transparent 25%),
+    linear-gradient(45deg, #ECEDDC 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: #EC173A;
 }
 .sr-only {
   position: absolute;
@@ -1272,7 +1294,7 @@ h2,
 }
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 20px;
 }
 h4,
 .h4 {
@@ -3975,7 +3997,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  background-color: gray;
 }
 .nav > li {
   position: relative;
@@ -4090,7 +4111,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-pills > li > a {
   border-radius: 4px;
-    font-size: 18px;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -4099,7 +4119,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #502020;
+  background-color: #66b3ff;
 }
 .nav-stacked > li {
   float: none;
@@ -4110,16 +4130,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-justified {
   width: 100%;
-  background-color: #aaa;
 }
 .nav-justified > li {
   float: none;
 }
 .nav-justified > li > a {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
   text-align: center;
-  padding-top: 20px;
-  font-size: 18px;
 }
 .nav-justified > .dropdown .dropdown-menu {
   top: auto;
@@ -4173,7 +4190,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-
 }
 @media (min-width: 768px) {
   .navbar {
@@ -4279,7 +4295,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 85px;
+  height: 50px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4966,7 +4982,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
-  background-image: url(http://traveldilse.com/wp-content/uploads/2014/07/blurred-background-81.jpg);
+  background-color: #eee;
 }
 .jumbotron h1,
 .jumbotron .h1 {
@@ -5009,12 +5025,13 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
+  max-width: 100%;
 }
 .thumbnail > img,
 .thumbnail a > img {
