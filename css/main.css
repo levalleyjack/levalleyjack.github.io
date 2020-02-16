@@ -2,19 +2,45 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Montserrat',Arial,sans-serif;
+}
+.dropshadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; 
+    
+}
+
+.jumbotron {
+padding-top: 40px;
+}
+
+.container .nav {
+    font-size: 20px;
+    border: 2px;
+    font-weight: 500;
 }
 
 a {
-    color: yellowgreen;
+    color:orangered;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
+.top {
+    margin-top: 20px;
+}
 
 a:hover,
 a:focus {
-    color: forestgreen;
+    color: black;
+}
+
+.a .h1 {
+    color: white;
+}
+
+.a .navbar-header {
+    font-weight: bolder;
 }
 
 p {
@@ -28,13 +54,20 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url('https://image.freepik.com/free-vector/blurred-multicolor-background_1107-145.jpg');
+    background-image: url('https://www.azamara.com/sites/default/files/heros/los-angeles-california.jpg');
     background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+      }
+
 
 header2 {
     position: relative;
@@ -62,6 +95,13 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 20px;
     font-size: 50px;
     font-weight: 300;
+}
+header .header-content .header-content-inner h1 a {
+    color: white;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px #000000;
+
+    
 }
 
 header .header-content .header-content-inner p {
@@ -110,7 +150,7 @@ header .header-content .header-content-inner p {
 
 .intro {
 	color: #fff;
-    background-color: yellowgreen;
+    background-color: orangered;
     padding: 70px 0;
     text-align: center;
 }
@@ -129,62 +169,16 @@ header .header-content .header-content-inner p {
 	text-align: center;
 }
 
-.promo,
-.promo h3,
-.promo a:link,
-.promo a:visited,
-.promo a:hover,
-.promo a:active {
-    color: white;
-	text-shadow: 0px 0px 40px black;
-    text-decoration: none;
-}
 
-.promo-item {
-    height: 200px;
-    line-height: 180px;
-    text-align: center;
-}
-
-.promo-item:hover {
-    background-size: 110%; 
-    border: 10px solid rgba(255,255,255,0.3);
-    line-height: 160px;
-}
-
-.promo-item h3 {
-    font-size: 40px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.item-1 {
-	background: url('../images/writing.jpg');
-	}
-	
-.item-2 {
-	background: url('../images/concert.jpg');
-	}
-	
-.item-3 {
-	background: url('../images/pencil_sharpener.jpg');
-	}
 		
-.item-1,
-.item-2,
-.item-3 {
-	background-size: cover;
-	background-position: 50% 50%;
-	}
-
 .page-footer {
 	text-align: center;
 	}
 
 .page-footer .contact {
 	padding: 100px 0;
-	background-color: yellowgreen;
-	color: #fff;
+	background-color: white;
+	color: black;
 	}
 
 .page-footer .contact p {
@@ -209,14 +203,15 @@ header .header-content .header-content-inner p {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    background-color: #fff;
+    background-color: white;
+    font-weight: 300;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
 }
 
 .navbar-default .navbar-header .navbar-brand {
-    color: yellowgreen;
+    color: orangered;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -231,12 +226,12 @@ header .header-content .header-content-inner p {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: yellowgreen;
+    color: #222;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: yellowgreen!important;
+    color: #222!important;
     background-color: transparent;
 }
 
@@ -245,6 +240,7 @@ header .header-content .header-content-inner p {
     background-color: transparent;
 }
 
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
@@ -252,8 +248,10 @@ header .header-content .header-content-inner p {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
-        letter-spacing: 0.4em;
+        color: rgba(255,255,255,.8);
+        letter-spacing: 0.09em;
+        font-size: 26px;
+        font-weight: 540;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -263,7 +261,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,.85);
     }
 
     .navbar-default .nav > li>a:hover,
@@ -274,17 +272,18 @@ header .header-content .header-content-inner p {
     .navbar-default.affix {
         border-color: #fff;
         background-color: #fff;
-        box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center; 
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
         letter-spacing: 0;
-        color: yellowgreen;
+        color: #222;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        color: #222;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -294,7 +293,7 @@ header .header-content .header-content-inner p {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: yellowgreen;
+        color: orangered;
     }
 }
 
@@ -352,9 +351,10 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn-primary {
-    border-color: yellowgreen;
+    border-color: orangered;
     color: #fff;
-    background-color: yellowgreen;
+    background-color: orangered;
+    
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -366,9 +366,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-    border-color: limegreen;
+    border-color: white;
     color: #fff;
-    background-color: limegreen;
+    background-color: orange;
 }
 
 .btn-primary:active,
@@ -395,23 +395,25 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: yellowgreen;
-    background-color: yellowgreen;
+    border-color: orangered;
+    background-color: orangered;
 }
 
 .btn-primary .badge {
-    color: yellowgreen;
+    color: orangered;
     background-color: #fff;
 }
-
-
+  
 .btn {
-    border-radius: 300px;
+    border: 300px;
     text-transform: uppercase;
 }
 
 .btn-lg {
-    padding: 15px 30px;
+    margin: 5px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 ::-moz-selection {
@@ -437,9 +439,69 @@ img::-moz-selection {
 }
 
 .text-primary {
-    color: yellowgreen;
+    color: orangered;
 }
 
 .bg-primary {
-    background-color: yellowgreen;
+    background-color: orangered;
 }
+
+/*animation element*/
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    }
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+
+a.button1{
+    display:inline-block;
+    padding:0.85em 2.9em;
+    border:0.1em solid black;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+    }
+a.button1:hover{
+    color: white;
+    background-color: black;
+    }
+@media all and (max-width:30em){
+a.button1{
+    display:block;
+    margin:0.4em auto;
+        }
+}
+
+.animation-element.slide-left {
+    opacity: 0;
+    transition: all 1300ms linear;
+    transition-timing-function: ease;
+    -moz-transform: translate3d(-150px, 0px, 0px);
+    -webkit-transform: translate3d(-150px, 0px, 0px);
+    -o-transform: translate(-150px, 0px);
+    -ms-transform: translate(-150px, 0px);
+    transform: translate3d(-150px, 0px, 0px);
+  }
+  
+  .animation-element.slide-left.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    
+  }
