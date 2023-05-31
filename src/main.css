@@ -1,0 +1,107 @@
+
+* { box-sizing: border-box;}
+
+:root {
+  --white-primary: #e1e1e1;
+  --white-secondary: #e3e3e3;
+  --gray-primary: #121212;
+  --gray-secondary: #1e1e1e;
+  --FW-navbar: #210002;
+  --FW-navbarhover: #503700;
+  --FW-navbar2:#ffaf00;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav#nav-bar {
+  flex-grow: 1;
+}
+
+
+main {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+main div {
+  position: relative;
+  height: 100%;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  height: auto;
+  background-color: var(--gray-primary); 
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 40px;
+}
+
+.content h1 {
+  font-size: 70px;
+  font-weight: bold;
+  color: #262626;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+
+.content p {
+  line-height: 1.5;
+  margin: auto;
+  color: #000;
+}
+
+ul {
+  padding: 0;
+  text-align: center; /* Sets the actual navbar to be center */
+}
+
+ul li {
+  display: inline-block; /*displays nav bar correctly*/
+}
+
+ul li a {
+  display: inline-block;
+  height: 45px;
+  font-size: 20px;
+  background: var(--gray-primary);
+  width: 250px;
+  color: var(--white-primary);
+  margin: 4px 0;
+  line-height: 45px;
+}
+
+ul li a:hover {
+  background: var(--gray-secondary);
+}
+
+#home {
+  background: #ededed;
+}
+
+#Projects,
+#Resume {
+  background: #f3f3f3;
+}
+
+@media (max-width: 500px) {
+  .content h1 {
+      font-size: 30px;
+  }
+}
