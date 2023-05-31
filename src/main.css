@@ -20,9 +20,14 @@
 nav#nav-bar {
   flex-grow: 1;
 }
+nav.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms ease-in-out;
+}
 
 
 main {
+  font-family: 'Lato', sans-serif;
   width: 100%;
   height: 100vh;
   scroll-behavior: smooth;
@@ -64,7 +69,7 @@ main div {
 .content p {
   line-height: 1.5;
   margin: auto;
-  color: #000;
+  color: var(--white-primary);
 }
 
 ul {
@@ -77,14 +82,15 @@ ul li {
 }
 
 ul li a {
+  text-decoration: none; /*no underlines for navbar*/
   display: inline-block;
   height: 45px;
   font-size: 20px;
   background: var(--gray-primary);
   width: 250px;
   color: var(--white-primary);
-  margin: 4px 0;
-  line-height: 45px;
+  margin: 4px;
+  line-height: 45px; /* how far navbar text from top of pages */
 }
 
 ul li a:hover {
@@ -92,7 +98,7 @@ ul li a:hover {
 }
 
 #home {
-  background: #ededed;
+  background: var(--gray-primary);
 }
 
 #Projects,
