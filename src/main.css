@@ -1,5 +1,7 @@
-
-* { box-sizing: border-box;}
+* { 
+  box-sizing: border-box; 
+  scroll-behavior: smooth !important;
+}
 
 :root {
   --white-primary: #e1e1e1;
@@ -9,7 +11,21 @@
   --FW-navbar: #210002;
   --FW-navbarhover: #503700;
   --FW-navbar2:#ffaf00;
-  
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
 }
 
 * {
@@ -57,6 +73,7 @@ ul li {
 }
 
 ul li a {
+  
   position: relative;
   margin: 0 5px;
   text-decoration: none;
@@ -75,8 +92,9 @@ ul li a {
 
 
 ul li a:hover {
+  transition: all 130ms ease-in;
   border-radius: 7px;
-  background: var(--gray-secondary);
+  color: var(--white-secondary);
 }
 .container {
   font-family: "Manrope", sans-serif;
@@ -108,8 +126,6 @@ ul li a:hover {
 #home {
   background-color: var(--gray-primary);
 }
-
-#Projects,
-#Resume {
+#Projects {
   background: #f3f3f3;
 }
