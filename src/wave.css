@@ -16,12 +16,6 @@
     transform: translate(-50%, 0);
   }
 }
-.wave:nth-of-type(1) {
-  --height: 21;
-  --opacity: 0.3;
-  --speed: 250;
-  --width: 800;
-}
 .wave:nth-of-type(2) {
   --height: 18;
   --opacity: 0.6;
