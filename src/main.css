@@ -81,7 +81,7 @@ ul li a {
   margin: 0 5px;
   text-decoration: none;
   letter-spacing: 0px;
-  transiton: 0.4s;
+  transition: 0.4s;
   height: 60px; /*SET EQUAL TO LINE HEIGHT FOR BEST RESULT*/
   width: 190px;
   color: var(--white-secondary);
