@@ -49,14 +49,17 @@ main div {
   height: 100%;
 }
 
-header {
-  text-align: center; /* Sets the actual navbar to be center */
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
   position: fixed;
   width: 100%;
   transition: 0.6s;
   padding: 0px;
   z-index: 1;
-  text-decoration: none; /*no underlines for navbar*/
   font-size: 25px;
   background: var(--gray-primary);
   color: var(--white-primary);
@@ -64,7 +67,7 @@ header {
   
 }
 
-header.sticky {
+nav.sticky {
   background: var(--gray-secondary);
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.7);
 }
@@ -76,7 +79,6 @@ ul li {
 
 ul li a {
   font-weight: bold;
-  text-transform: uppercase;
   position: relative;
   margin: 0 5px;
   text-decoration: none;
@@ -116,9 +118,7 @@ ul li a:hover {
   border-radius: 7px;
     color: #ffc384;
 }
-.container {
-  font-family: "Manrope", sans-serif;
-}
+
 .content {
   position: absolute; 
   top: 50%;
@@ -142,10 +142,40 @@ ul li a:hover {
   margin: auto;
   color: var(--white-primary);
 }
-
+#about{
+  background: var(--white-primary);
+}
 #home {
   background-color: var(--gray-primary);
 }
 #Projects {
-  background: #f3f3f3;
+  background: var(--white-secondary);
 }
+
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.card{
+  margin: auto;
+  padding: 4em;
+  overflow: auto;
+  max-width: 1000px;
+  background: white;
+  box-shadow: 12px 12px 15px rgba(0,0,0,0.2);
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-transform: uppercase;
+}
+.card i {
+  float: right;
+}
+

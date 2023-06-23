@@ -1,4 +1,4 @@
-/*wave.css*/
+
 .wave {
   animation: wave calc(var(--speed, 0) * 1s) infinite linear;
   background-image: url("infinite-wave.svg");
@@ -9,6 +9,7 @@
   opacity: var(--opacity);
   position: absolute;
   right: 0;
+  color:blue;
   width: calc(var(--width, 0) * 1vw);
 }
 @keyframes wave {
@@ -27,4 +28,14 @@
   --opacity: 1;
   --speed: 250;
   --width: 400;
+}
+.wave:nth-of-type(5) {
+  --height: 12;
+  --opacity: 0.5;
+  --speed: 200;
+  --width: 800;
+}
+
+.bottom{
+  transform: rotate(180deg);
 }
