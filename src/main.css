@@ -41,7 +41,6 @@ main {
   height: 100vh;
   scroll-behavior: smooth;
   position: relative;
-  overflow-x: hidden; /* no horizontal scroll bar */
 }
 
 main div {

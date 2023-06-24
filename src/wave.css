@@ -1,4 +1,12 @@
-
+.theocean{
+  height: 800px; /* change the height of the waves here */
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
 .wave {
   animation: wave calc(var(--speed, 0) * 1s) infinite linear;
   background-image: url("infinite-wave.svg");
