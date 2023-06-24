@@ -1,49 +1,50 @@
 .theocean{
-  height: 800px; /* change the height of the waves here */
-  width: 100%;
+  height: 8vh; /* change the height of the waves here */
+  width: 100vw;
   position: absolute;
-  bottom: 0;
+  bottom: 0%;
   left: 0;
   right: 0;
   overflow: hidden;
 }
 .wave {
-  animation: wave calc(var(--speed, 0) * 1s) infinite linear;
-  background-image: url("infinite-wave.svg");
-  background-size: 50% 100%;
-  bottom: -5%;
-  height: calc(var(--height, 0) * 1vh);
-  left: 0;
-  opacity: var(--opacity);
-  position: absolute;
-  right: 0;
-  color:blue;
-  width: calc(var(--width, 0) * 1vw);
-}
-@keyframes wave {
-  to {
-    transform: translate(-50%, 0);
-  }
-}
-.wave:nth-of-type(2) {
-  --height: 18;
-  --opacity: 0.6;
-  --speed: 250;
-  --width: 800;
-}
-.wave:nth-of-type(3) {
-  --height: 15;
-  --opacity: 1;
-  --speed: 250;
-  --width: 400;
-}
-.wave:nth-of-type(5) {
-  --height: 12;
-  --opacity: 0.5;
-  --speed: 200;
-  --width: 800;
+  animation: wave 8s linear infinite;
 }
 
-.bottom{
-  transform: rotate(180deg);
+.wave1 {
+  animation: wave1 10s linear infinite;
+}
+
+.wave2 {
+  animation: wave2 12s linear infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes wave1 {
+  0% {
+    transform: scaleY(1.2) translateX(0%);
+  }
+
+  100% {
+    transform: scaleY(1.2) translateX(100%);
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    transform: scaleY(.8) translateX(0%);
+  }
+
+  100% {
+    transform: scaleY(.8) translateX(100%);
+  }
 }
