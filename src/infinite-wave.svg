@@ -1,8 +1,3 @@
-<svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 762 52.917">
-<defs>
-<path id="wave" d="M0 0c22.863 0 40.637 25.93 63.5 25.93S104.137 0 127 0s40.637 25.93 63.5 25.93S231.137 0 254 0s40.637 25.93 63.5 25.93S358.137 0 381 0s40.637 25.93 63.5 25.93S485.137 0 508 0s40.637 25.93 63.5 25.93S612.137 0 635 0s40.637 25.93 63.5 25.93S739.137 0 762 0v52.917H0z" fill="#ffc384"/>
-</defs>
-<g><use href="#wave"/></g>
-
+<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" width="1600" height="198" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path fill="white" fill-rule="evenodd" d="M.005 121C311 121 409.898-.25 811 0c400 0 500 121 789 121v77H0s.005-48 .005-77z" transform="matrix(-1 0 0 1 1600 0)"/>
 </svg>
-
