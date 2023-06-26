@@ -48,7 +48,7 @@
 }
 
 .thedepths{
-  background-color: white; 
+  background-color: #121212; 
   height: 30%; /*How big the box containing the waves is. */
   width: 100%;
   position: relative; /*so that the waves are in the box */

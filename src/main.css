@@ -135,8 +135,12 @@ ul li a:hover {
   background-color: var(--gray-primary);
   height: 80vh;
 }
+
 #Projects {
-  background: var(--white-secondary);
+  background: var(--gray-primary);
+}
+#Projects h1 {
+  color: var(--white-secondary);
 }
 
 .container{
