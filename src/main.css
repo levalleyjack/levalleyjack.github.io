@@ -1,7 +1,7 @@
 
 * { 
   box-sizing: border-box; 
-  font-family: 'Avenir Next','Segoe ui',Ubuntu,sans-serif;
+  font-family: 'Segoe ui',Ubuntu,sans-serif !important;
   scroll-behavior: smooth !important;
 }
 
@@ -130,6 +130,7 @@ ul li a:hover {
 }
 #about{
   background: var(--accent);
+  height: 50vh;
 }
 #home {
   background-color: var(--gray-primary);
@@ -153,10 +154,15 @@ ul li a:hover {
 .card{
   margin: auto;
   padding: 4em;
-  overflow: auto;
   max-width: 1000px;
   background: white;
+  max-height: 40vh;
   box-shadow: 12px 12px 15px rgba(0,0,0,0.2);
+}
+
+
+.about{
+  box-shadow: inset 0px 0px 11px 0px rgba(0,0,0,0.75);
 }
 header {
   position: relative;
