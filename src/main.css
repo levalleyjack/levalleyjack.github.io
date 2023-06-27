@@ -1,7 +1,6 @@
-
-* { 
-  box-sizing: border-box; 
-  font-family: 'Segoe ui',Ubuntu,sans-serif !important;
+* {
+  box-sizing: border-box;
+  font-family: "Segoe ui", Ubuntu, sans-serif !important;
   scroll-behavior: smooth !important;
 }
 
@@ -10,11 +9,11 @@
   --white-secondary: #e3e3e3;
   --gray-primary: #121212;
   --gray-secondary: #1e1e1e;
-  --accent: #ffc384;
+  --accent: #b6a073;
 
   --FW-navbar: #210002;
   --FW-navbarhover: #503700;
-  --FW-navbar2:#ffaf00;
+  --FW-navbar2: #ffaf00;
 }
 
 * {
@@ -47,17 +46,15 @@ nav {
   padding: 0px;
   z-index: 1;
   font-size: 25px;
-  background: var(--gray-primary);
+  background: transparent;
   color: var(--white-primary);
   line-height: 60px; /* how far navbar text from top of pages */
-  
 }
 
 nav.sticky {
   background: var(--gray-secondary);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.7);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
 }
-
 
 ul li {
   display: inline-block; /*displays nav bar correctly*/
@@ -77,10 +74,9 @@ ul li a {
   padding: 0;
   text-align: center; /* Sets the actual navbar to be center */
   text-decoration: none; /*no underlines for navbar*/
-
 }
 
-a:after {    
+a:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -88,25 +84,23 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: #ffc384;
+  background: var(--accent);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after { 
+a:hover:after {
   width: 100%;
-  left: 0; 
+  left: 0;
 }
-
-
 
 ul li a:hover {
   transition: all 130ms ease-in;
   border-radius: 7px;
-    color: #ffc384;
+  color: var(--accent);
 }
 
 .content {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -119,22 +113,21 @@ ul li a:hover {
   font-weight: bold;
   color: #262626;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  z-index: 2;
 }
-
 
 .content p {
   line-height: 1.5;
   margin: auto;
   color: var(--white-primary);
 }
-#about{
+#about {
   background: var(--accent);
   height: 50vh;
 }
 #home {
-  background-color: var(--gray-primary);
-  height: 80vh;
+  background: transparent;
+  height: 100vh;
 }
 
 #Projects {
@@ -144,25 +137,24 @@ ul li a:hover {
   color: var(--white-secondary);
 }
 
-.container{
+.container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
-.card{
+.card {
   margin: auto;
   padding: 4em;
   max-width: 1000px;
   background: white;
   max-height: 40vh;
-  box-shadow: 12px 12px 15px rgba(0,0,0,0.2);
+  box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.2);
 }
 
-
-.about{
-  box-shadow: inset 0px 0px 11px 0px rgba(0,0,0,0.75);
+.about {
+  box-shadow: inset 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
 }
 header {
   position: relative;
@@ -176,3 +168,34 @@ header {
   float: right;
 }
 
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  position: relative;
+}
+
+.container-video {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 1)
+  );
+  width: 100%;
+}
+.overlay h1 {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 20%;
+  display: block;
+  text-align: center;
+}

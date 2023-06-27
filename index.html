@@ -1,69 +1,81 @@
-                              
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
-    <link rel="stylesheet" href="src/main.css">
-    <link rel="stylesheet" href="src/wave.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="src/main.css" />
+    <link rel="stylesheet" href="src/wave.css" />
     <title>Jack LeValley</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="#home"class="nav-link">Home</a></li>
-            <li><a href="#about"class="nav-link">About</a></li>
-            <li><a href="#Projects"class="nav-link">Projects</a></li>
-            <li><a href="#Resume"class="nav-link">Resume</a></li>
-        </ul>
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#Projects" class="nav-link">Projects</a></li>
+        <li><a href="#Resume" class="nav-link">Resume</a></li>
+      </ul>
     </nav>
     <main>
-            <div id="home">
-                <section class="content">
-                  <h1 style="color: #c4c4c4;">Jack <span style="color: #ffa700;">LeValley</span>(WIP Portfolio, latest edit is of 6/23/2023)</h1>
-                </section>
+      <div id="home">
+        <section class="content">
+          <div id="containervideo">
+            <video autoplay="autoplay" loop="loop" type="video/mp4">
+              <source src="src/Sheep.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="overlay">
+            <h1 style="color: #c4c4c4">
+              Jack <span style="color: #b6a073">LeValley</span>(WIP Portfolio,
+              latest edit is of 6/27/2023)
+            </h1>
+          </div>
+        </section>
+        <div class="wavecontainer">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+      </div>
+      <div id="about">
+        <div class="container">
+          <header>
+            <h1>Projects</h1>
+          </header>
+          <div class="card">
+            <h2>Project 1</h2>
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="thedepths">
+          <div class="wave2"></div>
+          <div class="wave2"></div>
+          <div class="wave2"></div>
+        </div>
+        <div id="Projects">
+          <div class="container">
+            <header>
+              <h1>Projects</h1>
+            </header>
+            <div class="card">
+              <h2>Project 1</h2>
+              <p>hello</p>
             </div>
-            <div class = "wavecontainer">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-            </div>
-            <div id="about">
-                <header>
-                    <h1>About</h1>
-                </header>
-                <section class="content">
-                    <h2>Jack LeValley</h2>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h4>
-                </section>
-                </div>
-            <div class = "thedepths">
-                <div class="wave2"></div>
-                <div class="wave2"></div>
-                <div class="wave2"></div>
-            </div>
-            <div id="Projects">
-                <div class="container">
-                    <header>
-                        <h1>Projects</h1>
-                    </header>
-                    <div class="card">
-                        <h2>Project 1</h2>
-                        <p>hello</p>
-                    </div>
-                </div>
-            </div>
-            <div id="Resume">
-                <section class="content">
-                    <h1>Resume</h1>
-                    <p></p>
-                </section>
-            </div>
-        </main> 
-<script src = "src/script.js"></script>
-</body>
+          </div>
+        </div>
+        <div id="Resume">
+          <section class="content">
+            <h1>Resume</h1>
+            <p></p>
+          </section>
+        </div>
+        <script src="src/script.js"></script>
+      </div>
+    </main>
+  </body>
 </html>

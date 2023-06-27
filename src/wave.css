@@ -1,14 +1,15 @@
-.wavecontainer{
-  height: 20%;
+.wavecontainer {
+  height: 100%;
   width: 100%;
   position: relative;
-  background-color: #121212;
+  background-color: transparent;
   overflow: hidden;
 }
 
 .wave {
   background: url(infinite-wave.svg) repeat-x;
   position: absolute;
+  bottom: 0;
   width: 6400px;
   height: 198px;
   opacity: 1;
@@ -19,7 +20,7 @@
 .wave:nth-of-type(2) {
   animation: wave 80s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   opacity: 0.7;
-  transform: translate(-900px, 50px); 
+  transform: translate(-900px, 50px);
 }
 .wave:nth-of-type(3) {
   animation: wave 60s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
@@ -39,7 +40,7 @@
 .wave2:nth-of-type(2) {
   animation: wave 80s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   opacity: 0.7;
-  transform: translate(-900px, 0px); 
+  transform: translate(-900px, 0px);
 }
 .wave2:nth-of-type(3) {
   animation: wave 60s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
@@ -47,8 +48,8 @@
   transform: translate(-200px, 20px);
 }
 
-.thedepths{
-  background-color: #121212; 
+.thedepths {
+  background-color: #121212;
   height: 30%; /*How big the box containing the waves is. */
   width: 100%;
   position: relative; /*so that the waves are in the box */
