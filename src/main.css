@@ -5,11 +5,12 @@
 }
 
 :root {
+  --background: url("pattern3.webp");
   --white-primary: #e1e1e1;
   --white-secondary: #e3e3e3;
   --gray-primary: #121212;
   --gray-secondary: #1e1e1e;
-  --accent: #b6a073;
+  --accent: #ffc384;
 
   --FW-navbar: #210002;
   --FW-navbarhover: #503700;
@@ -52,7 +53,7 @@ nav {
 }
 
 nav.sticky {
-  background: var(--gray-secondary) !important;
+  background: var(--gray-secondary);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.7);
 }
 
@@ -126,8 +127,9 @@ ul li a:hover {
   height: 50vh;
 }
 #home {
-  background: transparent;
-  height: 100vh;
+  transform-style: flat;
+  background: var(--background);
+  height: 120vh;
 }
 
 #Projects {
@@ -170,7 +172,7 @@ header {
 
 video {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   object-fit: cover;
   z-index: 0;
   position: relative;
@@ -191,11 +193,8 @@ video {
     rgba(0, 0, 0, 1)
   );
   width: 100%;
-}
-.overlay h1 {
-  position: absolute;
-  margin-left: 10%;
-  margin-top: 20%;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
 }

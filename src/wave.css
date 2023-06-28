@@ -14,7 +14,7 @@
   height: 198px;
   opacity: 1;
   animation: wave 125s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate(0, 70px);
+  transform: translate(0px, 70px);
 }
 
 .wave:nth-of-type(2) {
@@ -25,7 +25,7 @@
 .wave:nth-of-type(3) {
   animation: wave 60s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   opacity: 0.5;
-  transform: translate(-200px, 5px);
+  transform: translate(-200px, 80px);
 }
 .wave2 {
   background: url(infinite-wave-bottom.svg) repeat-x;
@@ -34,18 +34,18 @@
   height: 198px;
   opacity: 1;
   animation: wave 125s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-  transform: translate(0, 0px);
+  transform: translate(-700px, -20px);
 }
 
 .wave2:nth-of-type(2) {
   animation: wave 80s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   opacity: 0.7;
-  transform: translate(-900px, 0px);
+  transform: translate(-900px, -40px);
 }
 .wave2:nth-of-type(3) {
   animation: wave 60s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
   opacity: 0.5;
-  transform: translate(-200px, 20px);
+  transform: translate(-200px, -20px);
 }
 
 .thedepths {
