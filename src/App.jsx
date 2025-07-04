@@ -236,35 +236,34 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Resume Section */}
-        <section className="flex-shrink-0 w-screen h-screen flex items-center justify-center px-8">
-          <div className="max-w-4xl text-white">
-            <h2 className="text-4xl md:text-6xl font-light mb-12 text-center">
-              Resume
-            </h2>
-            <div className="space-y-12">
-              <div>
-                <h3 className="text-2xl font-medium mb-6">Experience</h3>
-                <div className="space-y-6">
-                  <div className="border-l-2 border-white/30 pl-6">
-                    <h4 className="text-xl font-medium">UCSC Capstone Member</h4>
-                    <p className="text-white/70 mb-2">Keysight Technologies • Sept 2024 - Dec 2024</p>
-                    <p className="text-white/80 leading-relaxed">
-Developed a plugin for Keysight’s Test Automation software to remotely operate desktop applications in the cloud                    </p>
-                  </div>
-                  <div className="border-l-2 border-white/30 pl-6">
-                    <h4 className="text-xl font-medium">Software Engineer System Administrator Intern</h4>
-                    <p className="text-white/70 mb-2">Maxar Space Systems • Jun 2024 - Sept 2024</p>
-                    <p className="text-white/80 leading-relaxed">
-Built Python scripts to automate updates and monitor system health metrics for the flight software lab machines.                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="text-center">
-                <button className="px-8 py-3 border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 text-sm font-medium tracking-wide">
-                  <a href="Jack_LeValley_Resume.pdf" download="Jack_LeValley_Resume.pdf">Download Full Resume</a>
-                </button>
-              </div>
+{/* Resume Section */}
+        <section className="flex-shrink-0 w-screen h-screen flex flex-col items-center justify-center px-8 py-16">
+          <div className="w-full max-w-6xl text-white">
+            <div className="flex items-center justify-between mb-8">
+              <h2 className="text-4xl md:text-6xl font-light">
+                Resume
+              </h2>
+              <a 
+                href="resume.pdf" 
+                download="Jack_LeValley_Resume.pdf"
+                className="flex items-center px-6 py-3 border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 text-sm font-medium tracking-wide"
+              >
+                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                Download PDF
+              </a>
+            </div>
+            
+            {/* PDF Embed Container */}
+            <div className="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg overflow-hidden" style={{ height: 'calc(100vh - 200px)' }}>
+              <iframe
+                src="Jack_LeValley_Resume.pdf"
+                className="w-full h-full"
+                title="Resume Preview"
+                style={{ border: 'none' }}
+              />
+        
             </div>
           </div>
         </section>
