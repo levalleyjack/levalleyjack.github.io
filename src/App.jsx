@@ -244,7 +244,7 @@ const Portfolio = () => {
                 Resume
               </h2>
               <a 
-                href="resume.pdf" 
+                href="Jack_LeValley_Resume.pdf" 
                 download="Jack_LeValley_Resume.pdf"
                 className="flex items-center px-6 py-3 border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 text-sm font-medium tracking-wide"
               >
